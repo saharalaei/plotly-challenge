@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Belly Button</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+
+<body> 
+    <div class="container" >
+        <div class="jumbotron text-center" id="header">
+            <strong>Belly Button Biodiversity Dashboard</strong>
+            <h4>Use the interactive charts below to explore the dataset</h4>
+        </div> 
+     </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        
+        <div class="boxed search-box" style="height: 150px; width:200px"><strong>Select Subject:</strong> 
+          <br></br>
+          <form id="form-input">
+            <div class="form-group">
+              <input class="form-control" id="subject_ID" type="text" placeholder="num between 0-152">
+            </div>
+            <button id="button" type="button" class="btn btn-default">Enter</button>
+          </form>
+        </div>
+          </form>
+        <br></br>
+        <div class="boxed demographic_info_box" style="height: 220px; width:200px;" >
+          <strong >Demographic Info</strong>
+          <br></br>
+          <ui style="list-style-type:none" id="demographic_info">
+          </ui>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar-plot"></div>
+      </div>
+      <div class="col-md-3">
+        <div id="gauge-plot"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble-plot"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.1/d3.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

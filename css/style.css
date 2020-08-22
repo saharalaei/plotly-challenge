@@ -1,0 +1,28 @@
+h4{  
+  -webkit-text-stroke: 0.1px black;
+}
+
+#header {
+  background-color:#8eafe7;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  font-size: 40px;
+}
+
+.demographic_info_box{
+  padding: 10px;
+  background-color:	#E8E8E8;
+}
+
+.search-box{
+  background-color:	#E8E8E8;
+  padding: 10px;
+  height: 100px;
+}
+
+.bar-plot:hover {
+  background-color: yellow;
+}
+
+
+
